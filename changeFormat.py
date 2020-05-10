@@ -1,6 +1,6 @@
 import re
 
-f1 = open('大王饶命.txt', 'r+', encoding="utf-8")
+f1 = open('第一序列.txt', 'r+', encoding="utf-8")
 infos = f1.readlines()
 f1.seek(0,0)
 i = 1

@@ -44,7 +44,7 @@ def download(num):
         contenthtmls = str(cbsObj.find('div', {'id': 'content'}))
         pcontent = contenthtmls.replace(r'<div id="content">', '')
         pcontent = pcontent.replace(r'</div>', '')
-        pcontent = pcontent.replace(r'<br/><br/>', '\r')
+        pcontent = pcontent.replace(r'<br/><br/>', '\r\n')
        
         with open( book["name"] + '.txt', 'a', encoding="utf-8") as f:
                 f.write('第'+ str(index) +'章节 章节名:'+titleName+'\r\n')
